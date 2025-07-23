@@ -1,36 +1,113 @@
 @use "../abstracts";
 html.dark {
     --text-color: #fff;
-    --icon-color: brightness(0) saturate(100%) invert(87%) sepia(65%)
-        saturate(2970%) hue-rotate(186deg) brightness(122%) contrast(107%);
+    --icon-color: brightness(0) saturate(100%) invert(87%) sepia(65%) saturate(2970%) hue-rotate(186deg)
+        brightness(122%) contrast(107%);
 
     --body-color: #343b49;
     --header-bg-color: #171c28;
-    @include abstracts.breakpoint(xl) {
+    @include abstracts.screen(xl) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
+
     --top-act-group-bg-color: #292e39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.2);
     --top-act-separate-color: #ededf6;
 
+    --act-dropdown-text-color: #B9BABE;
+    --act-dropdown-bg: #292E39;
+    --act-dropdown-shadow: rgba(23, 28, 40, 0.40);
+    --action-dropdown-separate-color : #171C28; 
+
     // DropDown
-    --text-dropdown-color: #B9BABE;
+    --text-dropdown-color: #b9babe;
     --dropdown-bg-color: #343b49;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-    --dropdown-arrow-color: brightness(0) saturate(100%) invert(14%) sepia(11%)
-        saturate(1164%) hue-rotate(183deg) brightness(95%) contrast(89%);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(14%) sepia(11%) saturate(1164%) hue-rotate(183deg)
+        brightness(95%) contrast(89%);
 
     --top-menu-border-color: #171c28;
 
     // Menu
-    --menu-column-icon-color: brightness(0) saturate(100%) invert(91%)
-        sepia(12%) saturate(17%) hue-rotate(221deg) brightness(103%)
-        contrast(102%);
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(91%) sepia(12%) saturate(17%) hue-rotate(221deg)
+        brightness(103%) contrast(102%);
 
     // Sidebar
-    --sidebar-bg-color: #292E39;
-    --sidebar-shadow-color: rgba(23, 28, 40, 0.40);
-    @include abstracts.breakpoint(sm) {
-        --text-color-sidebar: #B9BABE;
+    --sidebar-bg-color: #292e39;
+    --sidebar-shadow-color: rgba(23, 28, 40, 0.4);
+    @include abstracts.screen(sm) {
+        --text-color-sidebar: #b9babe;
     }
+
+    // Cate-Item
+    --cate-item-bg: #171c28;
+    --cate-item-thumb-bg: #292e39;
+    --cate-item-title: #fff;
+
+    // Button
+    --filter-btn-color: #fff;
+    --filter-btn-bg-color: #171c28;
+    --like-btn-shadow: rgba(124, 124, 124, 0.2);
+
+    // Product
+    --product-card-bg-color: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
+
+    // Filter Form
+    --filter-form-bg: #292e39;
+    --filter-form-shadow: rgba(0, 0, 0, 0.4);
+    --filter-form-slider-bg-color: #292e39;
+    --form-tags-bg: #171c28;
+    --filter-form-arrow-up-color: brightness(0) saturate(100%) invert(19%) sepia(7%) saturate(1347%) hue-rotate(183deg)
+        brightness(89%) contrast(96%);
+
+    // Auth
+    --auth-intro-bg: #171c28;
+    --auth-content-bg: #292e39;
+    --auth-intro-text-color: #b9babe;
+    --auth-content-heading-color: var(--auth-intro-text-color);
+
+    // Form
+    --form-border-color: var(--auth-intro-text-color);
+    --form-placeholder-color: var(--form-border-color);
+
+    // Product-Page
+    --product-detail-bg: #292e39;
+    --prod-info-bg: #171C28;
+    --prod-info-price-color: #EEE;
+    --prod-prop-tag-bg: #292E39;
+    --border-thumb-img : #fff;
+
+    @include abstracts.screen(md) {
+        --product-detail-bg: #292e39;
+        --prod-container-info-bg : #171C28;
+        --prod-container-info-shadow: rgba(23, 28, 40, 0.20);
+        --prod-info-bg: #171C28;
+    }
+
+    // Breadcrumbs
+    --breadcrumbs-bg: #171c28;;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
+    @include abstracts.screen(md) {
+        --breadcrumbs-bg: #171C28;
+    }
+
+    // Search Bar
+    --search-bar-bg: #171C28;
+
+    // Review Card
+    --review-card-bg: #171C28;
+
+    // Checkout
+    --checkout-cart-info-bg: #171C28;
+    --checkout-cart-info-shadow: rgba(23, 28, 40, 0.20);
+    --checkout-cart-item-input-border: #D2D1D6;
+    --border-bottom-cart-item-color: #292E39;
+    --bg-gift-item-icon-wrap: #292E39;
+    --shadow-gift-item-icon-wrap : rgba(23, 28, 40, 0.20);
+    --checkbox-address-color: "../icons/checkbox-uncheck-dark.svg";
+
+    // Shipping
+    --select-dialog-bg: #171C28;
+    --bg-hover-options: #757575;
 }

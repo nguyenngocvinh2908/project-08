@@ -1,0 +1,78 @@
+.text-content {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.6rem;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, img, blockquote, ul, ol, table, hr{
+        margin: 20px 0;
+    }
+
+    & > h1, & > h2 {
+        margin-top: 0;
+    }
+
+    p  img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    img + em {
+        font-style: italic;
+        display: block;
+        text-align: center;
+    }
+
+    blockquote {
+        background: #ffb7001c;
+        padding: 20px;
+        border-left: 3px solid #FFB700;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    hr {
+        opacity: 0.2;
+    }
+
+    a {
+        color:#FFB700;
+        text-decoration: underline;
+    }
+}
