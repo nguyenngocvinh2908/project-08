@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Checkout | Grocery Mart</title>
+        <title>Favorite List | Grocery Mart</title>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
@@ -62,7 +62,7 @@
 
                         <li class="breadcrumbs__item">
                             <a href="#!" class="breadcrumbs__link"
-                                >Checkout
+                                >Favorite
                             </a>
                         </li>
                     </ul>
@@ -72,14 +72,24 @@
                 <div class="checkout-container">
                     <div class="row">
                         <!-- Detail Product Information -->
-                        <div class="col-8 col-xl-7 col-lg-12">
+                        <div class="col-12">
                             <div class="cart-info">
+                                <h2 class="cart-info__heading cart-info__heading--lv2">Favorite List</h2>
+                                <p class="cart-info__desc">3 items</p>
+                                <div class="cart-info__check-all">
+                                    <label for="" class="cart-info__checkbox">
+                                        <input type="checkbox" name="" class="cart-info__checkbox-input" />
+                                    </label>
+                                </div>
                                 <div class="cart-info__list">
                                     <!-- Cart Item 1 -->
                                     <article class="cart-item">
+                                        <label for="" class="cart-info__checkbox">
+                                            <input type="checkbox" name="" class="cart-info__checkbox-input" checked/>
+                                        </label>
                                         <!-- Image -->
                                         <a href="./product-detail.html" class="cart-item__thumb-wrap">
-                                            <img src="./assets/img/product-card/pro-01.png" alt="" class="cart-item__thumb cart-item__thumb--margin-left">
+                                            <img src="./assets/img/product-card/pro-01.png" alt="" class="cart-item__thumb">
                                         </a>
                 
                                         <!-- Content -->
@@ -95,21 +105,34 @@
                                                 <p class="cart-item__price">$47.00 | 
                                                     <span class="cart-item__status">In Stock</span>
                                                 </p>
-
-                                                <div class="cart-item__ctrl">
-                                                    <div class="cart-item__input">
-                                                        LavAzza
-                                                        <img src="./assets/icons/arrow-down-2.svg" alt="" class="cart-item__icon">
+                                                <!-- Ctrl -->
+                                                <div class="cart-item__row">
+                                                    <div class="cart-item__ctrl">
+                                                        <div class="cart-item__input">
+                                                            LavAzza
+                                                            <img src="./assets/icons/arrow-down-2.svg" alt="" class="cart-item__icon">
+                                                        </div>
+    
+                                                        <div class="cart-item__input">
+                                                            
+                                                            <button class="cart-item__input-btn">
+                                                                <img src="./assets/icons/minus.svg" alt="" class="cart-item__icon icon">
+                                                            </button>
+                                                            <span>1</span>
+                                                            <button class="cart-item__input-btn">
+                                                                <img src="./assets/icons/plus.svg" alt="" class="cart-item__icon icon">
+                                                            </button>
+                                                        </div>
                                                     </div>
-
-                                                    <div class="cart-item__input">
-                                                        
-                                                        <button class="cart-item__input-btn">
-                                                            <img src="./assets/icons/minus.svg" alt="" class="cart-item__icon icon">
+                                                    <div class="cart-item__ctrl cart-item__ctrl--direction">
+                                                        <button class="cart-item__ctrl-btn">
+                                                            <img src="./assets/icons/heart-active.svg" alt="" class="cart-item__ctrl-icon cart-item__ctrl-icon--active">
+                                                            Save
                                                         </button>
-                                                        <span>1</span>
-                                                        <button class="cart-item__input-btn">
-                                                            <img src="./assets/icons/plus.svg" alt="" class="cart-item__icon icon">
+        
+                                                        <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
+                                                            <img src="./assets/icons/trash.svg" alt="" class="cart-item__ctrl-icon">
+                                                            Delete
                                                         </button>
                                                     </div>
                                                 </div>
@@ -119,26 +142,20 @@
                                                 <p class="cart-item__total-price">
                                                     $47.00
                                                 </p>
-                                                <div class="cart-item__ctrl cart-item__ctrl--direction">
-                                                    <button class="cart-item__ctrl-btn">
-                                                        <img src="./assets/icons/heart-2.svg" alt="" class="cart-item__ctrl-icon">
-                                                        Save
-                                                    </button>
-
-                                                    <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
-                                                        <img src="./assets/icons/trash.svg" alt="" class="cart-item__ctrl-icon">
-                                                        Delete
-                                                    </button>
-                                                </div>
+                                                <!-- Button Check -->
+                                                <a href="" class="btn btn--primary btn--rounded cart-item__btn">Check Out</a>
                                             </div>
                                         </div>
                                     </article>
 
                                     <!-- Cart Item 2 -->
                                     <article class="cart-item">
+                                        <label for="" class="cart-info__checkbox">
+                                            <input type="checkbox" name="" class="cart-info__checkbox-input" />
+                                        </label>
                                         <!-- Image -->
                                         <a href="./product-detail.html" class="cart-item__thumb-wrap">
-                                            <img src="./assets/img/product-card/pro-02.png" alt="" class="cart-item__thumb cart-item__thumb--margin-left">
+                                            <img src="./assets/img/product-card/pro-02.png" alt="" class="cart-item__thumb">
                                         </a>
                 
                                         <!-- Content -->
@@ -154,49 +171,58 @@
                                                     <span class="cart-item__status">In Stock</span>
                                                 </p>
 
-                                                <div class="cart-item__ctrl">
-                                                    <div class="cart-item__input">
-                                                        LavAzza
-                                                        <img src="./assets/icons/arrow-down-2.svg" alt="" class="cart-item__icon">
+                                                <!-- Ctrl -->
+                                                <div class="cart-item__row">
+                                                    <div class="cart-item__ctrl">
+                                                        <div class="cart-item__input">
+                                                            LavAzza
+                                                            <img src="./assets/icons/arrow-down-2.svg" alt="" class="cart-item__icon">
+                                                        </div>
+    
+                                                        <div class="cart-item__input">
+                                                            
+                                                            <button class="cart-item__input-btn">
+                                                                <img src="./assets/icons/minus.svg" alt="" class="cart-item__icon icon">
+                                                            </button>
+                                                            <span>1</span>
+                                                            <button class="cart-item__input-btn">
+                                                                <img src="./assets/icons/plus.svg" alt="" class="cart-item__icon icon">
+                                                            </button>
+                                                        </div>
                                                     </div>
-
-                                                    <div class="cart-item__input">
-                                                        
-                                                        <button class="cart-item__input-btn">
-                                                            <img src="./assets/icons/minus.svg" alt="" class="cart-item__icon icon">
+                                                    <div class="cart-item__ctrl cart-item__ctrl--direction">
+                                                        <button class="cart-item__ctrl-btn">
+                                                            <img src="./assets/icons/heart-active.svg" alt="" class="cart-item__ctrl-icon cart-item__ctrl-icon--active">
+                                                            Save
                                                         </button>
-                                                        <span>1</span>
-                                                        <button class="cart-item__input-btn">
-                                                            <img src="./assets/icons/plus.svg" alt="" class="cart-item__icon icon">
+        
+                                                        <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
+                                                            <img src="./assets/icons/trash.svg" alt="" class="cart-item__ctrl-icon">
+                                                            Delete
                                                         </button>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                             <div class="cart-item__content-right">
                                                 <p class="cart-item__total-price">
                                                     $106.00
                                                 </p>
-                                                <div class="cart-item__ctrl cart-item__ctrl--direction">
-                                                    <button class="cart-item__ctrl-btn">
-                                                        <img src="./assets/icons/heart-2.svg" alt="" class="cart-item__ctrl-icon">
-                                                        Save
-                                                    </button>
-
-                                                    <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
-                                                        <img src="./assets/icons/trash.svg" alt="" class="cart-item__ctrl-icon">
-                                                        Delete
-                                                    </button>
-                                                </div>
+                                                <!-- Button Check -->
+                                                <a href="" class="btn btn--primary btn--rounded cart-item__btn">Check Out</a>
                                             </div>
                                         </div>
                                     </article>
 
                                     <!-- Cart Item 3 -->
                                     <article class="cart-item">
+                                        <label for="" class="cart-info__checkbox">
+                                            <input type="checkbox" name="" class="cart-info__checkbox-input" checked/>
+                                        </label>
                                         <!-- Image -->
                                         <a href="./product-detail.html" class="cart-item__thumb-wrap">
-                                            <img src="./assets/img/product-card/pro-01.png" alt="" class="cart-item__thumb cart-item__thumb--margin-left">
+                                            <img src="./assets/img/product-card/pro-01.png" alt="" class="cart-item__thumb">
                                         </a>
                 
                                         <!-- Content -->
@@ -212,21 +238,34 @@
                                                 <p class="cart-item__price">$38.65 | 
                                                     <span class="cart-item__status">In Stock</span>
                                                 </p>
-
-                                                <div class="cart-item__ctrl">
-                                                    <div class="cart-item__input">
-                                                        LavAzza
-                                                        <img src="./assets/icons/arrow-down-2.svg" alt="" class="cart-item__icon">
+                                                <!-- Ctrl -->
+                                                <div class="cart-item__row">
+                                                    <div class="cart-item__ctrl">
+                                                        <div class="cart-item__input">
+                                                            LavAzza
+                                                            <img src="./assets/icons/arrow-down-2.svg" alt="" class="cart-item__icon">
+                                                        </div>
+    
+                                                        <div class="cart-item__input">
+                                                            
+                                                            <button class="cart-item__input-btn">
+                                                                <img src="./assets/icons/minus.svg" alt="" class="cart-item__icon icon">
+                                                            </button>
+                                                            <span>2</span>
+                                                            <button class="cart-item__input-btn">
+                                                                <img src="./assets/icons/plus.svg" alt="" class="cart-item__icon icon">
+                                                            </button>
+                                                        </div>
                                                     </div>
-
-                                                    <div class="cart-item__input">
-                                                        
-                                                        <button class="cart-item__input-btn">
-                                                            <img src="./assets/icons/minus.svg" alt="" class="cart-item__icon icon">
+                                                    <div class="cart-item__ctrl cart-item__ctrl--direction">
+                                                        <button class="cart-item__ctrl-btn ">
+                                                            <img src="./assets/icons/heart-active.svg" alt="" class="cart-item__ctrl-icon cart-item__ctrl-icon--active">
+                                                            Save
                                                         </button>
-                                                        <span>2</span>
-                                                        <button class="cart-item__input-btn">
-                                                            <img src="./assets/icons/plus.svg" alt="" class="cart-item__icon icon">
+        
+                                                        <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
+                                                            <img src="./assets/icons/trash.svg" alt="" class="cart-item__ctrl-icon">
+                                                            Delete
                                                         </button>
                                                     </div>
                                                 </div>
@@ -236,95 +275,25 @@
                                                 <p class="cart-item__total-price">
                                                     $38.65
                                                 </p>
-                                                <div class="cart-item__ctrl cart-item__ctrl--direction">
-                                                    <button class="cart-item__ctrl-btn ">
-                                                        <img src="./assets/icons/heart-2.svg" alt="" class="cart-item__ctrl-icon">
-                                                        Save
-                                                    </button>
 
-                                                    <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
-                                                        <img src="./assets/icons/trash.svg" alt="" class="cart-item__ctrl-icon">
-                                                        Delete
-                                                    </button>
-                                                </div>
+                                                <!-- Button Check -->
+                                                <a href="" class="btn btn--primary btn--rounded cart-item__btn">Check Out</a>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
 
-                                <div class="cart-info__bottom d-md-none">
-                                    <div class="row">
-                                        <div class="col-8 col-xxl-7">
-                                            <div class="cart-info__continue">
+                                <div class="cart-info__bottom">
+                                    <div class="cart-info__row">
+                                        <div class="cart-info__continue">
                                                 <a href="" class="cart-info__continue-link">
                                                     <img src="./assets/icons/arrow-left.svg" alt="" class="cart-info__continue-icon icon">
                                                     Continue Shopping
                                                 </a>
-                                            </div>
                                         </div>
-
-                                        <div class="col-4 col-xxl-5">
-                                            <div class="cart-info__row">
-                                                <span>Subtotal:</span>
-                                                <span>$191.65</span>
-                                            </div>
-
-                                            <div class="cart-info__row">
-                                                <span>Shipping:</span>
-                                                <span>$10:00</span>
-                                            </div>
-
-                                            <div class="cart-info__separate"></div>
-
-                                            <div class="cart-info__row cart-info__row-bold">
-                                                <span>Total:</span>
-                                                <span>$201.65</span>
-                                            </div>
-                                        </div>
+                                        <a href="./checkout.html" class="btn btn--primary btn--rounded btn--large cart-info__checkout-all">All Check Out</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-4 col-xl-5 col-lg-12">
-                            <div class="cart-info cart-info--margin">
-                                <div class="cart-info__row">
-                                    <span>Subtotal <span class="cart-info__row-bland">(Items)</span></span>
-                                    <span>3</span>
-                                </div>
-
-                                <div class="cart-info__row">
-                                    <span>Price <span class="cart-info__row-bland">(Total)</span></span>
-                                    <span>$191.65</span>
-                                </div>
-
-                                <div class="cart-info__row">
-                                    <span>Shipping</span>
-                                    <span>$10.00</span>
-                                </div>
-                                <div class="cart-info__separate"></div>
-                                <div class="cart-info__row">
-                                    <span>Estimated Total</span>
-                                    <span>$201.65</span>
-                                </div>
-
-                                <a href="./shipping.html" class="cart-info__btn btn btn--primary btn--rounded">
-                                    Continue to checkout
-                                </a>
-                            </div>
-                            <div class="cart-info cart-info__gift-item">
-                                <a href="#!">
-                                    <article class="gift-item">
-                                        <div class="gift-item__icon-wrap">
-                                            <img src="./assets/icons/gift.svg" alt="" class="gift-item__icon">
-                                        </div>
-
-                                        <div class="gift-item__content">
-                                            <h3 class="gift-item__title">Send this order as a gift.</h3>
-                                            <p class="gift-item__desc">Available items will be shipped to your gift recipient.</p>
-                                        </div>
-                                    </article>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -337,18 +306,5 @@
                 load("#footer", "./templates/footer.html");
             </script>
         </footer>
-
-        <!-- Dialog -->
-        <div class="dialog hide" id="delete-confirm">
-            <div class="dialog__content">
-                <div class="dialog__text">Do you want to delete this product ?</div>
-                <div class="dialog__bottom">
-                    <button class="btn btn--text dialog__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
-                    <button class="btn btn--primary dialog__btn btn--no-margin js-toggle" toggle-target="#delete-confirm">Confirm</button>
-                </div>
-            </div>
-
-            <div class="dialog__overlay"></div>
-        </div>
     </body>
 </html>

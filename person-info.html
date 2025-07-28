@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Person Info | Grocery Mart</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Link Js -->
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header">
+            <script>
+                load("#header", "./templates/header-logined.html");
+            </script>
+        </header>
+
+        <!-- Main -->
+        <main class="profile">
+            <div class="container">
+                <!-- Profile Content -->
+                <div class="profile__container">
+                    <!-- Search Bar -->
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name="" id="" class="search-bar__input" placeholder="Search for item" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/search.svg" alt="" class="icon search-bar__icon" />
+                        </button>
+                    </div>
+                    <div class="profile__gap d-none d-md-block"></div>
+                    <div class="row gy-md-3">
+                        <!-- Cart Left -->
+                        <div class="col-3 col-xl-4 col-lg-5 col-md-12 d-md-none">
+                            <aside class="profile__sidebar">
+                                <!-- User -->
+                                <div class="profile-user">
+                                    <img src="./assets/img/avatar.jpg" alt="" class="profile-user__avatar" />
+                                    <h1 class="profile-user__name">Tra My</h1>
+                                    <p class="profile-user__desc">Registered: 17th May 2022</p>
+                                </div>
+
+                                <!-- Menu 1 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Manage Account</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/person.svg" alt="" class="icon"
+                                                /></span>
+                                                Personal info
+                                            </a>
+                                        </li>
+
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/address.svg" alt="" class="icon"
+                                                /></span>
+                                                Addresses
+                                            </a>
+                                        </li>
+
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/message.svg" alt="" class="icon"
+                                                /></span>
+                                                Communications & privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu 2 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Manage Account</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/download.svg" alt="" class="icon"
+                                                /></span>
+                                                Reorder
+                                            </a>
+                                        </li>
+
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/heart.svg" alt="" class="icon"
+                                                /></span>
+                                                Lists
+                                            </a>
+                                        </li>
+
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/register.svg" alt="" class="icon"
+                                                /></span>
+                                                Registries
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu 3 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Subscriptions & plans</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/protect.svg" alt="" class="icon"
+                                                /></span>
+                                                Protection plans
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu 4 -->
+                                <div class="profile-menu">
+                                    <h3 class="profile-menu__title">Customer Service</h3>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/help.svg" alt="" class="icon"
+                                                /></span>
+                                                Help
+                                            </a>
+                                        </li>
+
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon icon"
+                                                    ><img src="./assets/icons/help-rounded.svg" alt="" class="icon"
+                                                /></span>
+                                                Terms of Use
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+
+                        <!-- Cart Right -->
+                        <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                            <!-- Cart - 01 -->
+                            <div class="cart-info">
+                                <div class="cart-info__continue">
+                                    <a href="./profile.html" class="cart-info__continue-link">
+                                        <img
+                                            src="./assets/icons/arrow-left.svg"
+                                            alt=""
+                                            class="cart-info__continue-icon icon"
+                                        />
+                                        <h2 class="cart-info__heading--lv2">Personal info</h2>
+                                    </a>
+                                </div>
+
+                                <!-- Grid System -->
+                                <form target="" class="form profile__form">
+                                    <div class="row gy-3 gy-md-2">
+                                        <div class="col-6 col-lg-12">
+                                            <div class="form__group">
+                                                <label for="name" class="form__label form__label--medium"
+                                                    >Full name</label
+                                                >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        class="form__input"
+                                                        placeholder="Tra My"
+                                                        required
+                                                        minlength="2"
+                                                    />
+                                                </div>
+                                                <p class="form__error">Minimum character is 2 !</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-lg-12">
+                                            <div class="form__group">
+                                                <label for="name" class="form__label form__label--medium"
+                                                    >Email address</label
+                                                >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="email"
+                                                        name=""
+                                                        id=""
+                                                        class="form__input"
+                                                        placeholder="admin@uihut.com"
+                                                        required
+                                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                                        
+                                                    />
+                                                </div>
+                                                <p class="form__error">Minimum character is 2 !</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-lg-12">
+                                            <div class="form__group">
+                                                <label for="name" class="form__label form__label--medium"
+                                                    >Phone Number</label
+                                                >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="tel"
+                                                        name=""
+                                                        id=""
+                                                        class="form__input"
+                                                        placeholder="+008 01234 56789"
+                                                        required
+                                                        pattern="^(?:\+84|0)(3[2-9]|5[6|8|9]|7[0|6-9]|8[1-5]|9[0-9])[0-9]{7}$"
+                                                    />
+                                                </div>
+                                                <p class="form__error">Minimum character is 2 !</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-lg-12">
+                                            <div class="form__group">
+                                                <label for="name" class="form__label form__label--medium"
+                                                    >Password</label
+                                                >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="password"
+                                                        name=""
+                                                        id=""
+                                                        class="form__input"
+                                                        placeholder="•••••••••"
+                                                        required
+                                                        minlength="4"
+                                                    />
+                                                </div>
+                                                <p class="form__error">Minimum character is 2 !</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dialog__bottom">
+                                        <button class="btn btn--text">
+                                            Cancel
+                                        </button>
+                                        <button
+                                            class="btn btn--primary btn--rounded btn--no-margin profile__btn"
+                                        >
+                                            Save Edit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <script>
+                load("#footer", "./templates/footer.html");
+            </script>
+        </footer>
+
+        <!-- Dialog -->
+        <div class="dialog hide" id="delete-confirm">
+            <div class="dialog__content">
+                <div class="dialog__text">Do you want to delete this product ?</div>
+                <div class="dialog__bottom">
+                    <button class="btn btn--text dialog__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                    <button
+                        class="btn btn--primary dialog__btn btn--no-margin js-toggle"
+                        toggle-target="#delete-confirm"
+                    >
+                        Confirm
+                    </button>
+                </div>
+            </div>
+
+            <div class="dialog__overlay"></div>
+        </div>
+    </body>
+</html>

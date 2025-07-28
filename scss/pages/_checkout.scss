@@ -50,6 +50,10 @@
 
         &--lv2 {
             font-size: 2.2rem;
+
+            @include abstracts.screen(sm) {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -57,6 +61,11 @@
         font-size: 1.8rem;
         font-weight: 500;
         line-height:  144.444% ;
+        margin-bottom: 10px;
+
+        &--margin {
+            margin-top: 30px;
+        }
     }
     
 
@@ -106,6 +115,14 @@
         font-weight: 500;
         line-height: 144.444%;
 
+        @include abstracts.screen(xl) {
+            gap: 30px;
+        }
+
+        @include abstracts.screen(md) {
+            flex-wrap: wrap;   
+        }
+
         &:not(:first-child) {
             margin-top: 10px;
         }
@@ -123,6 +140,11 @@
         &--fontsize-small {
             font-size: 1.6rem;
         }
+
+        &--direction {
+            flex-direction: row;
+        }
+
     }
 
     &__separate {
@@ -179,6 +201,23 @@
         font-weight: 400;
         line-height: 146.667%;
     }
+
+    &__check-all {
+        margin-bottom: 30px;
+
+        @include abstracts.screen(md) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__checkbox {
+        align-self: flex-start;
+    }
+
+    &__checkout-all {
+        width: 100%;
+    }
+
 }
 
 
@@ -186,13 +225,12 @@
 .cart-item {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    // column-gap: 30px;
 
     padding: 30px 0;
     border-bottom: 1px solid var(--border-bottom-cart-item-color);
 
     @include abstracts.screen(md) {
-        column-gap: 16px;
         padding: 16px 0;
     }
 
@@ -208,6 +246,7 @@
         width: 175px;
         height: 175px;
         object-fit: contain;
+        margin: 0 30px 0 20px;
 
         @include abstracts.screen(xl) {
             width: 150px;
@@ -217,6 +256,7 @@
         @include abstracts.screen(md) {
             width: 60px;
             height: 60px;
+            margin: 0 16px;
         }
 
         &-wrap {
@@ -225,7 +265,25 @@
             }
             
         }
+
+        &--margin-left {
+            margin-left: 0;
+        }
         
+    }
+
+    &__row  {
+        display: flex;
+        gap: 30px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @include abstracts.screen(md) {
+            gap: 0;
+        }
     }
 
     &__content {
@@ -246,8 +304,8 @@
             justify-content: space-between;
 
             @include abstracts.screen(xl) {
-                margin-top: 15px;
-                flex-direction: row-reverse;
+                margin-top: 20px;
+                flex-direction: row-reverse;    
                 align-items: center;
             }
 
@@ -255,6 +313,17 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+        }
+    }
+
+    &__btn {
+        @include abstracts.screen(xl) {
+            order: -2;
+        }
+
+        @include abstracts.screen(md) {
+            margin-top: 20px;
+            order: 1;
         }
     }
 
@@ -285,7 +354,8 @@
         @include abstracts.screen(md) {
             flex-direction: column;
             row-gap: 10px;
-            align-items: flex-start;
+            column-gap: 10px;
+            align-items: center;
         }
 
         &-btn {
@@ -308,6 +378,13 @@
             }
         }
 
+        &-icon {
+
+            &--active {
+                margin-top: 7px;
+            }
+        }
+
 
     }
 
@@ -323,6 +400,10 @@
 
         font-size: 1.5rem;
         font-weight: 500;
+
+        @include abstracts.screen(md) {
+            align-self: flex-start;
+        }
 
         &-btn {
             display: flex;
@@ -483,7 +564,23 @@
     border-radius: 20px;
     background: var(--payment-item-bg);
 
+    @include abstracts.screen(md) {
+        column-gap: 20px;
+    }
+
     &__content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 16px;
+        }
+    }
+
+    &__info {
         flex: 1;
     }
 
@@ -520,6 +617,16 @@
         width: 70px;
         height: 54px;
         object-fit: cover;
+
+        @include abstracts.screen(md) {
+            margin-right: 0;
+        }
+
+        @include abstracts.screen(sm) {
+            align-self: flex-start;
+            width: 60px;
+            height: 46px;
+        }
     }
 
     &__checkbox {

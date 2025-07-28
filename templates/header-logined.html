@@ -23,7 +23,7 @@
                 <span class="nav-btn__qnt">3</span>
             </a>
 
-            <a href="" class="nav-btn d-none d-md-flex">
+            <a href="./favorite.html" class="nav-btn d-none d-md-flex">
                 <img src="./assets/icons/heart.svg" alt="" class="icon nav-btn__icon">
                 <span class="nav-btn__title">Favorite</span>
                 <span class="nav-btn__qnt">3</span>
@@ -5572,10 +5572,80 @@
             </div>
 
             <div class="top-act__group">
-                <button class="top-act__btn">
-                    <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
-                    <span class="top-act__title">03</span>
-                </button>
+                <divc class="top-act__btn-wrap">
+                    <button class="top-act__btn">
+                        <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
+                        <span class="top-act__title">03</span>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div class="act-dropdown">
+                        <div class="act-dropdown__inner">
+                            <img src="./assets/icons/arrow-up.png" alt="" class="act-dropdown__icon">
+                            <div class="act-dropdown__top">
+                                <h2 class="act-dropdown__title">
+                                    You have 3 item(s)
+                                </h2>
+                                <a href="./checkout.html" class="act-dropdown__view-all">See All</a>
+                            </div>
+                            <div class="row row-cols-3 gx-2 act-dropdown__list">
+                                <!-- Cart Preview Item 1 -->
+                                <div class="col">
+                                    <article class="cart-preview-item">
+                                        <div class="cart-preview-item__img-wrap">
+                                            <img src="./assets/img/product-card/pro-02.png" alt="" class="cart-preview-item__thumb">
+                                        </div>
+
+                                        <h3 class="cart-preview-item__title">
+                                            Lavazza Coffee Blends 
+                                        </h3>
+
+                                        <p class="cart-preview-item__price">
+                                            $329.00
+                                        </p>
+                                    </article>
+                                </div>
+
+                                <!-- Cart Preview Item 2 -->
+                                <div class="col">
+                                    <article class="cart-preview-item">
+                                        <div class="cart-preview-item__img-wrap">
+                                            <img src="./assets/img/product-card/pro-01.png" alt="" class="cart-preview-item__thumb">
+                                        </div>
+                                        <h3 class="cart-preview-item__title">
+                                            Coffee Beans Espresso
+                                        </h3>
+                                        <p class="cart-preview-item__price">
+                                           $39.99
+                                        </p>
+                                    </article>
+                                </div>
+
+                                <!-- Cart Preview Item 3 -->
+                                <div class="col">
+                                    <article class="cart-preview-item">
+                                        <div class="cart-preview-item__img-wrap">
+                                            <img src="./assets/img/product-card/pro-04.png" alt="" class="cart-preview-item__thumb">
+                                        </div>
+                                        <h3 class="cart-preview-item__title">
+                                            Qualità Oro Mountain
+                                        </h3>
+                                        <p class="cart-preview-item__price">
+                                            $47.00
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="act-dropdown__bottom act-dropdown__bottom--remove-pad"></div>
+
+                            <div class="act-dropdown__checkout">
+                                <a href="./favorite.html" class="btn btn--primary btn--rounded act-dropdown__checkout-btn">Check Out All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </divc>
 
                 <div class="top-act__separate"></div>
 
@@ -5675,9 +5745,71 @@
 
             </div>
 
-            <button class="top-act__user">
+            <div class="top-act__user">
                 <img src="./assets/img/avatar.jpg" alt="" class="top-act__avatar" />
-            </button>
+                <!-- Dropdown -->
+                <div class="act-dropdown top-act__dropdown user-menu">
+                    <div class="act-dropdown__inner">
+                        <img src="./assets/icons/arrow-up.png" alt="" class="act-dropdown__icon top-act__dropdown-icon">
+                        <div class="user-menu__top">
+                            <img src="./assets/img/avatar.jpg" alt="" class="user-menu__avatar">
+                            <div>
+                                <p class="user-menu__name">Tra My</p>
+                                <p class="user-menu__email">@Tumi</p>
+                            </div>
+                            
+                        </div>
+                        <ul class="user-menu__list">
+                            <li>
+                                <a href="./profile.html" class="user-menu__link">
+                                    <span class="user-menu__wrap-icon">
+                                        <img src="../assets/icons/person.svg" alt="" class="user-menu__icon icon">
+                                    </span>
+                                    Profile
+                                </a>
+                            </li>
+                
+                            <li class="user-menu__separate">
+                                <a href="./favorite.html" class="user-menu__link">
+                                    <span class="user-menu__wrap-icon">
+                                        <img src="./assets/icons/heart.svg" alt="" class="user-menu__icon icon">
+                                    </span>
+                                    Favorite List
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./favorite.html" class="user-menu__link" id="switch-theme-btn">
+                                    <div     class="user-menu__wrap-icon">
+                                        <img src="./assets/icons/theme.svg" alt="" class="user-menu__icon icon">
+                                    </div>
+                                    <span>Dark Mode</span>
+                                </a>
+                            </li>
+                
+                            <li class="user-menu__separate">
+                                <a href="#!" class="user-menu__link">
+                                    <span class="user-menu__wrap-icon">
+                                        <img src="./assets/icons/setting.svg" alt="" class="user-menu__icon icon">
+                                    </span>
+                                    Setting
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="./sign-in.html" class="user-menu__link">
+                                    <span class="user-menu__wrap-icon">
+                                        <img src="./assets/icons/logout.svg" alt="" class="user-menu__icon icon">
+                                    </span>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>
